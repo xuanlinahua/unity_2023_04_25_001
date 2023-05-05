@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -13072,6 +13072,7 @@ TextureImporter:
       Forest Props_28: -1754150927
       Forest Props_541: 1164637063
       Forest Props_544: 1444018727
+      Forest Props_599: -1256833347
       Forest Props_436: -2100564684
       Forest Props_319: 1214696443
       Forest Props_565: -1952448790
@@ -13080,7 +13081,6 @@ TextureImporter:
       Forest Props_451: -926474471
       Forest Props_159: 709347209
       Forest Props_352: 1994005018
-      Forest Props_599: -1256833347
       Forest Props_235: -1696966442
       Forest Props_481: -1637176853
       Forest Props_550: -1984662621
@@ -13165,21 +13165,21 @@ TextureImporter:
       Forest Props_493: 420546549
       Forest Props_379: 914876752
       Forest Props_188: -1981654169
-      Forest Props_191: 821223794
       Forest Props_254: 2144121881
-      Forest Props_250: -17071798
+      Forest Props_191: 821223794
       Forest Props_454: 525284362
       Forest Props_172: 2015372786
+      Forest Props_250: -17071798
       Forest Props_214: 1903698433
       Forest Props_40: 1914208048
       Forest Props_174: 1127952866
       Forest Props_485: 1649153880
       Forest Props_195: 1157669637
       Forest Props_133: 878890217
-      Forest Props_474: 1137808369
+      Forest Props_477: -1826850614
       Forest Props_292: 1798922285
       Forest Props_284: 1968311254
-      Forest Props_477: -1826850614
+      Forest Props_474: 1137808369
       Forest Props_116: 806723234
       Forest Props_312: -2091283873
       Forest Props_561: 1019122967
@@ -13337,10 +13337,10 @@ TextureImporter:
       Forest Props_511: 14135810
       Forest Props_142: 1181088642
       Forest Props_71: 594567807
-      Forest Props_344: -868939959
+      Forest Props_376: -290032292
       Forest Props_128: 2097513407
       Forest Props_383: 1105777572
-      Forest Props_376: -290032292
+      Forest Props_344: -868939959
       Forest Props_607: -665651349
       Forest Props_30: -2135939214
       Forest Props_108: 777712569
@@ -13348,9 +13348,9 @@ TextureImporter:
       Forest Props_530: -876912911
       Forest Props_62: 17854763
       Forest Props_54: 1310124942
+      Forest Props_523: 1010517435
       Forest Props_117: -1821416478
       Forest Props_377: -834675335
-      Forest Props_523: 1010517435
       Forest Props_251: 1619871388
       Forest Props_84: 1189095658
       Forest Props_374: -309782902
