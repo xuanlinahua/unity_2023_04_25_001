@@ -1,13 +1,25 @@
+using Fungus;
 using UnityEngine;
 
 public class ControlSystem : MonoBehaviour
 {
-    private void Awake()
+    [Header("移動速度")]
+    [Range(0,10)]
+    public float moveSpeed = 3.5f;
+    [Header("剛體")]
+    public Rigidbody2D rig;
+    [Header("動畫控制器")]
+    public Animator ani;
+    [Header("跑步參數")]
+    public string parRun = "開關走路"; 
+    
+
+
+    public void Awake()
     {
-        print("C奶");
-        print("48*54883");
-        print($"{58745-99/885}");
-        print($"{58745-99}");
+        print(25688);
+        print("顆顆");
+        print($"{1 + 2}");
     }
     private void Start()
     {
@@ -15,6 +27,38 @@ public class ControlSystem : MonoBehaviour
     }
     private void Update()
     {
-        print("<color=#899887>更新事件</color>");
+        // print("<color=#899887>更新事件</color>");
+
+        // 呼叫移動方式
+        Move();
     }
+
+	private void Move()
+	{
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+
+        rig.velocity = new Vector2(h, 0) * moveSpeed;
+
+        // h 不等於 0 或者 v 不等於 0 要走路
+        ani.SetBool(parRun, h != 0 || v != 0);
+
+        // print(Input.GetKeyDown(KeyCode.A));
+
+        // 如果 按下 A 或者 按下 左 就 設定為 180
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+		{
+            // print("玩家按下 A");
+            transform.eulerAngles = new Vector3(0, 180, 0);
+		}
+
+        // 如果 按下 D 或者 按下 右 就 設定為 0
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            // print("玩家按下 D");
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+    }
+
 }
